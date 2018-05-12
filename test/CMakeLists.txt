@@ -2,4 +2,4 @@ add_executable(test
     example.cpp
     main.cpp)
 
-target_link_libraries(test libgtest)
+target_link_libraries(test libstuff libgtest)
