@@ -1,18 +1,26 @@
 #include "gtest/gtest.h"
 #include "example.hpp"
+#include <cmath>
 
-TEST(ExampleTest, StringComparisonWorks) {
-  EXPECT_STREQ("Ala", "Ala");
-  EXPECT_STRNE("Ala", "kot");
-}
+#include <cassert>
 
-TEST(ExampleTest, BrokenTest) {
-    const char* text = "Ala";
-    char buf[sizeof(text)];
-    strcpy(buf, text);
-    EXPECT_EQ(text, buf);
-}
+TEST(RootsTest, PositiveDelta) {
+    int denom = 0;
+    assert(denom != 0);
 
-TEST(ExampleTest, FiveReturnsFive) {
-    EXPECT_EQ(five(), 5);
+    Solution s = roots(1, -3, 2);
+    ASSERT_EQ(s.count, 2);
+
+    double x1 = std::min(s.x1, s.x2);
+    double x2 = std::max(s.x1, s.x2);
+
+    const double eps = 1e-5;
+    EXPECT_NEAR(x1, 1.0, eps);
+    // std::abs(x1 - 1.0) < eps;
+    EXPECT_NEAR(x2, 2.0, eps);
+
+    EXPECT_DOUBLE_EQ(x1, 1.0);
+    EXPECT_DOUBLE_EQ(x2, 2.0);
+
+    EXPECT_FALSE(s.identity);
 }

@@ -1,4 +1,3 @@
+#include "example.hpp"
 
-int five() {
-    return 5;
-}
+
