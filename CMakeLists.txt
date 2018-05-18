@@ -19,6 +19,7 @@ target_link_libraries(main libstuff)
 add_executable(io_cstdio src/io/cstdio.cpp)
 add_executable(io_iostream src/io/iostream.cpp)
 add_executable(io_manips src/io/manips.cpp)
+add_executable(io_exceptions src/io/exceptions.cpp)
 
 add_executable(exceptions src/exceptions.cpp)
 add_executable(guarantees src/guarantees.cpp)
