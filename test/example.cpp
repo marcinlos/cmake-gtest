@@ -5,9 +5,6 @@
 #include <cassert>
 
 TEST(RootsTest, PositiveDelta) {
-    int denom = 0;
-    assert(denom != 0);
-
     Solution s = roots(1, -3, 2);
     ASSERT_EQ(s.count, 2);
 
@@ -16,7 +13,6 @@ TEST(RootsTest, PositiveDelta) {
 
     const double eps = 1e-5;
     EXPECT_NEAR(x1, 1.0, eps);
-    // std::abs(x1 - 1.0) < eps;
     EXPECT_NEAR(x2, 2.0, eps);
 
     EXPECT_DOUBLE_EQ(x1, 1.0);

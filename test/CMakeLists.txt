@@ -4,3 +4,5 @@ add_executable(runTest
     main.cpp)
 
 target_link_libraries(runTest libstuff libgtest)
+
+add_test(allTests runTest)
