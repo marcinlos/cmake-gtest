@@ -22,6 +22,7 @@ add_executable(io_manips src/io/manips.cpp)
 
 add_executable(exceptions src/exceptions.cpp)
 add_executable(guarantees src/guarantees.cpp)
+add_executable(templates src/templates.cpp)
 
 add_subdirectory(lib/gtest)
 add_subdirectory(test)
