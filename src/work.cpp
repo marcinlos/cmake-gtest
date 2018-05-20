@@ -14,7 +14,8 @@ std::vector<std::string> dayOfWork(Employee* e) {
     stuff.push_back("grab a coffee");
 
     if (e->type() == EMP_DEVELOPER) {
-        stuff.push_back("surf the web mindlessly for an hour");
+        stuff.push_back("surf the web mindlessly");
+        stuff.push_back("play table soccer");
     } else if (e->type() == EMP_CEO) {
         stuff.push_back("Play golf with a senator");
     }

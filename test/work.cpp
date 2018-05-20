@@ -41,7 +41,8 @@ TEST(Work, YoungDeveloperWorksAsExpected) {
     ASSERT_THAT(work, ElementsAre(
                 "take a bus to work",
                 "grab a coffee",
-                "surf the web mindlessly for an hour",
+                "surf the web mindlessly",
+                "play table soccer",
                 "grab another coffee",
                 "Develop stuff",
                 "attend a meeting",
@@ -56,7 +57,8 @@ TEST(Work, DeveloperWorksAsExpected) {
     ASSERT_THAT(work, ElementsAre(
                 "take a bus to work",
                 "grab a coffee",
-                "surf the web mindlessly for an hour",
+                "surf the web mindlessly",
+                "play table soccer",
                 "grab another coffee",
                 "Develop stuff",
                 "attend a meeting",
