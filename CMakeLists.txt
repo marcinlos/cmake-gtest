@@ -16,7 +16,9 @@ add_library(libcompany
     src/Contact.hpp
     src/Contact.cpp
     src/Report.hpp
-    src/Report.cpp)
+    src/Report.cpp
+    src/work.hpp
+    src/work.cpp)
 
 target_include_directories(libcompany PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src)
 

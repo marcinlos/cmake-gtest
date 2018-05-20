@@ -3,8 +3,9 @@ add_executable(runTest
     Employee.cpp
     Database.cpp
     Report.cpp
+    work.cpp
     main.cpp)
 
-target_link_libraries(runTest libcompany libgtest)
+target_link_libraries(runTest libcompany libgtest libgmock)
 
 add_test(allTests runTest)
